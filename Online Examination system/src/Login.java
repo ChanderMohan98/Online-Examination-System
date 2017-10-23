@@ -137,7 +137,12 @@ public class Login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+Question1 rpf=new Question1();   //create new object of the window you want to open
+        rpf.setVisible(true);   //makes it visible
+        rpf.pack();
+        rpf.setLocationRelativeTo(null);   //sets the location relative to current  component
+        rpf.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        this.dispose();   //closes the current window        // TODO add your handling code here:           // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -147,11 +152,16 @@ jPasswordField1.setText("");
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
+Signup rpf=new Signup();   //create new object of the window you want to open
+        rpf.setVisible(true);   //makes it visible
+        rpf.pack();
+        rpf.setLocationRelativeTo(null);   //sets the location relative to current  component
+        rpf.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        this.dispose();   //closes the current window        // TODO add your handling code here:           // TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
-     * @param args the command line arguments
+     * 
      */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */

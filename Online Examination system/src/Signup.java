@@ -67,6 +67,11 @@ public class Signup extends javax.swing.JFrame {
 
         jButton1.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
         jButton1.setText("SIGN IN");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jRadioButton1.setFont(new java.awt.Font("Ubuntu", 1, 18)); // NOI18N
         jRadioButton1.setText("Student");
@@ -145,6 +150,15 @@ public class Signup extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+Home rpf=new Home();   //create new object of the window you want to open
+        rpf.setVisible(true);   //makes it visible
+        rpf.pack();
+        rpf.setLocationRelativeTo(null);   //sets the location relative to current  component
+        rpf.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        this.dispose();   //closes the current window        // TODO add your handling code here:           // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
